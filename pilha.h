@@ -1,4 +1,4 @@
-#define PSIZE 20
+#define PSIZE 10
 #define ESIZE PSIZE/2
 typedef struct elemento {
     int i;
