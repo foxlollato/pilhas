@@ -27,15 +27,21 @@ Pilha* criaPilha(){
     }
 }*/
 
-int push(Pilha *pilha, struct elemento dado){
-    if(pilha!=NULL){
-
+int push(Pilha *pilha, struct elemento dado, int p){
+    if(pilha!=NULL && p>=1 && p<=2){
+	if(p==1){
+	
         pilha->topo1++;
-        pilha->topo2--;
         pilha->dado[pilha->topo1-1]=dado;
-        pilha->dado[pilha->topo2-1]=dado;
-
         return 1;
+	
+	}else{
+
+        	pilha->topo2--;
+        	pilha->dado[pilha->topo2-1]=dado;
+        	return 1;
+	}
+
     }
     return 0;
 }
@@ -49,7 +55,7 @@ void imprimePilha(Pilha *pilha){
         }
     }
 }
-int pop(Pilha *pilha){
+int pop(Pilha *pilha, int p){
 
     if(pilha!=NULL){
             pilha->topo1--;
