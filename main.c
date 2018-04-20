@@ -30,14 +30,9 @@ int main(int argc, char *argv[]){
 
     printf("\n=====\n");
 
-    pop(pilha);
-    pop(pilha);
-    push(pilha,dado[0]);
-    push(pilha,dado[1]);
 
 
     imprimePilha(pilha);
-//    apagaPilha(pilha);
 
     return 0;
 }
