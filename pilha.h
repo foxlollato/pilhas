@@ -1,8 +1,8 @@
-#define PSIZE 10
+#define PSIZE 20
 #define ESIZE PSIZE/2
 typedef struct elemento {
     int i;
-};
+}elementos;
 
 typedef struct tipoNo Pilha;
 

@@ -6,7 +6,7 @@ typedef struct tipoNo {
     struct elemento dado[PSIZE];
     int topo1;
     int topo2;
-};
+}nos;
 
 typedef struct tipoNo noPilha ;
 

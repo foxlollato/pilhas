@@ -11,16 +11,17 @@ int main(int argc, char *argv[]){
                         (7),
                         (8),
                         (9),
-                        (10),
+                        (10)
                         };
+
     Pilha *pilha=criaPilha();
     int a=0;
 
-    	while(a!=ESIZE/2){
+    	while(a!=ESIZE){
         	push(pilha,dado[a],1);
         a++;
    	 }
-    
+    	a=0;
 	while(a!=ESIZE){
         	push(pilha,dado[a],2);
         a++;
@@ -28,11 +29,6 @@ int main(int argc, char *argv[]){
 
     imprimePilha(pilha);
 
-    printf("\n=====\n");
-
-
-
-    imprimePilha(pilha);
 
     return 0;
 }
